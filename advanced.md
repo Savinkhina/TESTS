@@ -132,10 +132,32 @@
 
   
 
-#### Q15. Вам нужно обновить поле status в таблице orders на ‘cancelled' для всех заказов старше 2020 года. Какой запрос использовать?
+#### Q17. Вам нужно обновить поле status в таблице orders на ‘cancelled' для всех заказов старше 2020 года. Какой запрос использовать?
 
   
 
 - [x] `update orders set status = 'cancelled' where year(order_date) < 2020.`
 
+  
 
+#### Q18. Какой запрос позволяет создать обычное представление с фильтрацией по сумме?
+
+  
+
+- [x] `create view revenue_summary as select user_id, sum(price) as total from payments group by user_id having sum(price) > 10000`
+
+  
+
+#### Q19. Что вернёт следующий запрос, если в таблице нет ни одной строки?                                                                                                      SELECT SUM(amount), COUNT(*) FROM transactions
+
+  
+
+- [x] `NULL И О`
+
+  
+
+#### Q20. Почему этот запрос может дать неожиданные результаты?                                                                                                                  SELECT category, COUNT (price) FROM products GROUP BY category;
+
+  
+
+- [x] `COUNT(price) не учитывает NULL, и результат может быть занижен`
