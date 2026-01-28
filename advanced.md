@@ -121,3 +121,14 @@
   
 
 - [x] `DROP, ALTER, CREATE, RENAME`
+
+  
+
+#### Q16. Почему следующий запрос может вернуть неверный ранг пользователя в пределах месяца?                                                                                   rank() over (partition by date_trunc('month', order_date) order by sum(amount) over (partition by user_id)).
+
+  
+
+- [x] `Он использует оконную функцию внутри другой оконной функции.`
+
+  
+
