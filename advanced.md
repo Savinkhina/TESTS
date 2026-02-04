@@ -22,7 +22,7 @@
 - [x] `Смена порядка запросов для EXCEPT поменяет выводимые данные.`
 
 #### Что вернёт следующий запрос, если в таблице нет ни одной строки?
-- SELECT SUM(amount), COUNT(*) FROM transactions
+SELECT SUM(amount), COUNT(*) FROM transactions
 - Некорректный результат
 - Ошибку
 - О и 0
