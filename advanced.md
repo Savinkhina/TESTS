@@ -3,17 +3,17 @@
 ### SQL
 -----------------------------------------
 #### Какой будет результат, если значение в колонке таблицы подходит под несколько условий в CASE?
-- `вернется значение THEN последнего условия
+- вернется значение THEN последнего условия
 - [x] `вернется значение THEN первого условия.`
-- `вернется значение THEN первого условия
-- `вернется NULL
+- вернется значение THEN первого условия
+- вернется NULL
 
 #### Укажите запрос, который выберет все фильмы, связанные со словами bad, good, angry. В названиях фильмов могут содержаться эти слова в разном виде, например в разных регистрах (Badboys) или в измененной форме (goodspeed).
-- `select movie_name from movies where lower (movie_name) like 'bad' or lower(movie_name) like`
-- `select movie_name from movies where movie_name like '%bad%' or movie_name like '%angry%' or`
-- `select movie_name from movies where movie_name like '%Good' or movie_name like '%Bad' or mo`
+- select movie_name from movies where lower (movie_name) like 'bad' or lower(movie_name) like
+- select movie_name from movies where movie_name like '%bad%' or movie_name like '%angry%' or
+- select movie_name from movies where movie_name like '%Good' or movie_name like '%Bad' or mo
 - [x] `select movie_name from movies where lower(movie_name) like '%bad%' or lower(movie_name) like '%angry%' or lower(movie_name) like '%good%'`
-- `select movie_name from movies where movie_name in ('bad', 'angry', 'good')`
+- select movie_name from movies where movie_name in ('bad', 'angry', 'good')
 
 #### Выберите верное утверждение относительно операторов EXISTS и ANY в SQL.
 - [x] `EXISTS проверяет, содержит ли подзапрос хотя бы одну строку, и возвращает TRUE, если строка есть.`
