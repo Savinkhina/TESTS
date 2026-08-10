@@ -1,6 +1,6 @@
 ## Python — продвинутый уровень
 
-🏆 Правильных ответов: ?
+🏆 Правильных ответов: 14 из 16
 <img width="1000" alt="adv1" src="assets/adv1.jpg">
 <img width="1000" alt="adv2" src="assets/adv2.jpg">
 <img width="1000" alt="adv3" src="assets/adv3.jpg">
