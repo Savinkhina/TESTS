@@ -28,7 +28,7 @@
 <img width="1000" alt="adv25" src="assets/adv25.jpg">
 <img width="1000" alt="adv26" src="assets/adv26.jpg">
 <img width="1000" alt="adv27" src="assets/adv27.jpg">
-🏆 Правильных ответов: 14 из 15.
+🏆 Правильных ответов: ?
 <img width="1000" alt="adv28" src="assets/adv28.jpg">
 <img width="1000" alt="adv29" src="assets/adv29.jpg">
 <img width="1000" alt="adv30" src="assets/adv30.jpg">
