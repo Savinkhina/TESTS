@@ -11,6 +11,8 @@
 <img width="1000" alt="8" src="assets/8.jpg">
 <img width="1000" alt="9" src="assets/9.jpg">
 <img width="1000" alt="10" src="assets/10.jpg">
+
+🏆 Продвинутый уровень 13 из 15.
 <img width="1000" alt="11" src="assets/11.jpg">
 <img width="1000" alt="12" src="assets/12.jpg">
 <img width="1000" alt="13" src="assets/13.jpg">
