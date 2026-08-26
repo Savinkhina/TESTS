@@ -1,6 +1,6 @@
 # PostgreSQL — продвинутый уровень
 
-## 🏆 Правильных ответов: 
+## 🏆 Правильных ответов: 14 из 15
 <img width="1000" alt="1" src="assets/1.jpg">
 <img width="1000" alt="2" src="assets/2.jpg">
 <img width="1000" alt="3" src="assets/3.jpg">
