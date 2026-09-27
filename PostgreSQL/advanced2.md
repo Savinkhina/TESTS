@@ -7,6 +7,7 @@
 - Bitmap Scan (сканирование по битовой карте)
 - TID Scan (TID / ctid сканирование)
 - Seq Scan vs Index в контексте DWH
+
 Как увидеть тип сканирования
 EXPLAIN (ANALYZE, BUFFERS)
 SELECT *
