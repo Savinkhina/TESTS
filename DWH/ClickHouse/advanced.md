@@ -44,7 +44,6 @@ CREATE TABLE orders
     user_id UInt32,
     order_date Date,
     amount Decimal(10, 2),
-    
     -- Проекция для быстрого поиска по user_id
     PROJECTION alternative_pk_user
     (
