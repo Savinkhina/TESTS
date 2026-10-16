@@ -57,6 +57,27 @@ ORDER BY order_id; -- Основной ключ
 - Как это работает: На диске скрытно создаются две копии данных. Если в WHERE указан order_id, используется основной индекс. Если в WHERE указан user_id, ClickHouse использует бинарный поиск по индексу проекции alternative_pk_user.
 - Плюс: Всё прозрачно для аналитика, запросы сами становятся быстрее.
 - Минус: Требует в два раза больше места на диске при записи.
+**Метод 2: Материализованные представления (Materialized Views)**
+Это классический, проверенный временем подход, заменяющий вторичные индексы. Вы создаете вторую «зеркальную» таблицу с другим ORDER BY, а специальный триггер (Materialized View) автоматически перекладывает туда данные в момент вставки (INSERT).
+-- 1. Основная таблица (оптимальна для поиска по order_id)
+```sql
+CREATE TABLE orders_by_id (
+    order_id UInt64,
+    user_id UInt32,
+    amount Decimal(10, 2)
+) ENGINE = MergeTree() ORDER BY order_id;
+
+-- 2. Зеркальная таблица (оптимальна для поиска по user_id)
+CREATE TABLE orders_by_user (
+    order_id UInt64,
+    user_id UInt32,
+    amount Decimal(10, 2)
+) ENGINE = MergeTree() ORDER BY user_id;
+
+-- 3. Механизм синхронизации (перекладывает данные «на лету»)
+CREATE MATERIALIZED VIEW mv_orders_by_user TO orders_by_user AS 
+SELECT * FROM orders_by_id;
+```
 
 
 
