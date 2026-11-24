@@ -1,5 +1,4 @@
-## Git — продвинутый уровень
-
+## ООП — продвинутый уровень
 🏆 Правильных ответов: 12 из 15.
 <img width="1000" alt="adv1" src="assets/1.jpg">
 <img width="1000" alt="adv2" src="assets/2.jpg">
