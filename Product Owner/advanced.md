@@ -1,1 +1,193 @@
+# 1. Управление командой и процессами
+## Планирование и организация работы
+- Backlog / бэклог: приоритизированный список задач и требований
+- Roadmap / дорожная карта: план развития платформы данных по кварталам и годам
+- Sprint / спринт: фиксированный цикл разработки (обычно 1–4 недели)
+- Sprint planning / Daily / Review / Retrospective: базовые церемонии Scrum
+- Kanban: управление потоком задач с ограничением WIP
+- WIP limit: лимит задач «в работе» на человека или колонку
+- Velocity: скорость команды (объём работы за спринт)
+- Capacity planning: планирование доступной ёмкости команды
+- Lead time / Cycle time: время от появления задачи до выпуска / от начала работы до завершения
+- Throughput: количество задач, закрытых за период
+- Story points: относительная оценка сложности
+- Definition of Ready (DoR) / Definition of Done (DoD): критерии готовности задачи к взятию в работу / к закрытию
+- Technical debt / техдолг: накопленные компромиссы в архитектуре и коде
+- Bus factor: число людей, потеря которых парализует проект
+- Escalation / эскалация: передача проблемы на уровень выше
+## Управление людьми
+- 1-on-1: регулярные индивидуальные встречи с сотрудником
+- Performance review: оценка эффективности
+- Grade / грейдирование: уровни квалификации (Junior / Middle / Senior / Lead)
+- IDP (Individual Development Plan): индивидуальный план развития
+- Onboarding / адаптация: ввод нового сотрудника в работу
+- Hiring pipeline: воронка найма
+- Team topology: модели организации команд (stream-aligned, platform, enabling, complicated-subsystem)
+- Skip-level meeting: встреча руководителя с сотрудниками через голову прямого лидера
+- Attrition / turnover: текучесть кадров
+- Engagement / eNPS: вовлечённость и индекс лояльности сотрудников
+- Feedback 360: обратная связь от коллег, подчинённых и руководства
+- Delegation / делегирование, coaching, mentoring
+## Метрики и управленческая отчётность
+- KPI / OKR: ключевые показатели / цели и ключевые результаты
+- SLA / SLO / SLI: соглашение, цель и индикатор уровня сервиса
+- OLA: внутреннее соглашение об уровне сервиса между подразделениями
+- TCO (Total Cost of Ownership): совокупная стоимость владения
+- ROI: возврат инвестиций
+- FinOps: управление затратами на облачную инфраструктуру
+- Budget / CAPEX / OPEX: бюджет, капитальные и операционные затраты
+# 2. Роль Product Owner и продуктовый подход
+- Data Product / продукт данных: набор данных, витрина или отчёт, управляемые как продукт
+- Data as a Product: один из принципов Data Mesh
+- Product Owner (PO): отвечает за ценность продукта и приоритеты
+- Product Manager (PM): стратегия, рынок, развитие продукта
+- Stakeholder / стейкхолдер: заинтересованная сторона (бизнес-заказчик, ИБ, финансы)
+- Stakeholder map: карта влияния и интереса
+- Product vision / vision statement: образ желаемого будущего продукта
+- Product strategy: способ достижения видения
+- Epic / Feature / User Story: уровни декомпозиции требований
+- Acceptance criteria: критерии приёмки
+- User story mapping: карта пользовательских историй
+- MVP (Minimum Viable Product): минимальный жизнеспособный продукт
+- MLP / MMP: минимальный любимый / продаваемый продукт
+- Value stream / ценностный поток
+- Prioritization frameworks: RICE, ICE, MoSCoW, WSJF, Kano, Cost of Delay
+- Business case / бизнес-кейс: обоснование инициативы
+- Value proposition: ценностное предложение
+- Time to market / Time to insight: время вывода продукта / получения инсайта
+- Discovery / Delivery: исследование проблемы / реализация решения
+- Customer Development / CustDev: интервью с пользователями
+- Hypothesis / гипотеза, A/B-тест
+- Adoption / usage: степень использования данных и отчётов
+- Data consumer / data producer: потребитель и поставщик данных
+- Internal customer: внутренний заказчик
+- Product-led vs project-led: продуктовый и проектный подходы
+- Change request (CR): запрос на изменение
+- Scope creep: неконтролируемое разрастание объёма
+- RACI: матрица ответственности (Responsible, Accountable, Consulted, Informed)
+- Release management / release train: управление релизами
+- Go-live / Go/No-Go: запуск в промышленную эксплуатацию / решение о запуске
+- Sunset / deprecation: вывод продукта или отчёта из эксплуатации
+# 3. Методологии и фреймворки
+- Agile / Scrum / Kanban / Scrumban
+- SAFe / LeSS / Spotify model: масштабирование Agile
+- Waterfall / Hybrid: каскадная и гибридная модели
+- DevOps / DataOps / MLOps / DevSecOps
+- ITIL / ITSM: управление ИТ-услугами
+- CI/CD: непрерывная интеграция и поставка
+- TOGAF / ArchiMate / Zachman: архитектурные фреймворки
+- DAMA-DMBOK: свод знаний по управлению данными
+- PMBOK / PRINCE2: проектное управление
+- Lean / Theory of Constraints: бережливое производство, теория ограничений
+- Design Thinking
+# 4. Data Governance и качество данных
+- Data Governance: система управления данными (политики, роли, процессы)
+- Data Owner / Data Steward / Data Custodian: владелец, ответственный за качество, технический хранитель
+- Data Council / Data Governance Committee: орган принятия решений по данным
+- Data Catalog: каталог данных
+- Business Glossary: бизнес-глоссарий
+- Metadata / Technical metadata / Business metadata
+- Data Lineage / линия данных: путь данных от источника к отчёту
+- Impact analysis: оценка влияния изменений
+- Data Quality (DQ): качество данных (полнота, точность, согласованность, актуальность, уникальность, валидность)
+- DQ rules / DQ scorecard: правила и сводная оценка качества
+- Data Profiling: профилирование данных
+- MDM (Master Data Management): управление мастер-данными
+- Golden record: эталонная запись
+- Reference Data / НСИ: нормативно-справочная информация
+- Data Contract: формальное соглашение между поставщиком и потребителем данных
+- Data Classification: классификация данных по чувствительности
+- PII / персональные данные, 152-ФЗ, GDPR
+- Data Retention / Archiving: сроки хранения и архивирование
+- Data Lifecycle: жизненный цикл данных
+- RBAC / ABAC / Row-level security / Masking: управление доступом и маскирование
+- Audit trail: журнал аудита
+- Data Observability: наблюдаемость данных (свежесть, объём, схема, распределение)
+# 5. Архитектура DWH и данных
+## Концепции хранилища
+- DWH (Data Warehouse) / КХД: корпоративное хранилище данных
+- Data Mart / витрина данных
+- Data Lake / озеро данных
+- Data Lakehouse: гибрид озера и хранилища
+- Data Mesh: доменная децентрализованная архитектура
+- Data Fabric: интеграционный слой над распределёнными данными
+- Operational Data Store (ODS): оперативное хранилище
+- Staging / Raw / Core / Mart: слои хранилища
+- Medallion architecture (Bronze / Silver / Gold)
+- Single Source of Truth (SSOT): единый источник правды
+- Source system / система-источник
+## Подходы к моделированию
+- Kimball (dimensional modeling): звезда и снежинка
+- Inmon (3NF, Corporate Information Factory)
+- Data Vault 2.0: Hub, Link, Satellite
+- Anchor Modeling
+- Star / Snowflake schema
+- Fact / Dimension: факты и измерения
+- Grain / гранулярность
+- SCD (Slowly Changing Dimensions): типы 1, 2, 3, 6
+- Surrogate key / Business key
+- Denormalization / Normalization
+- Conformed dimension: общие измерения
+## Интеграция и обработка
+- ETL / ELT: извлечение, преобразование, загрузка
+- CDC (Change Data Capture): захват изменений
+- Batch / Streaming / Near real-time
+- Lambda / Kappa architecture
+- Orchestration / оркестрация: Airflow, Dagster, Prefect
+- Idempotency / идемпотентность: безопасность повторного запуска
+- Backfill / reload: перезагрузка исторических данных
+- Incremental / full load: инкрементальная и полная загрузка
+- Partitioning / Clustering / Indexing
+- Schema evolution / Schema drift
+- Data pipeline / DAG
+## Технологии и классы решений
+- MPP (Massively Parallel Processing): Greenplum, Vertica, Teradata
+- OLAP / OLTP
+- Columnar storage: колоночное хранение
+- Hadoop / Spark / Hive / Trino / ClickHouse
+- Kafka / Debezium / NiFi
+- dbt: трансформации данных как код
+- BI: Power BI, Tableau, Superset, DataLens, Qlik
+- Semantic layer: семантический слой
+- Self-service BI / Self-service analytics
+- Cloud DWH: Snowflake, BigQuery, Redshift, Synapse
+- Импортозамещение: переход на отечественные решения (Arenadata, Yandex Cloud, ClickHouse и др.)
+- Vendor lock-in: зависимость от поставщика
+# 6. Эксплуатация и надёжность
+- Incident / Problem / Change / Release management
+- Postmortem / RCA (Root Cause Analysis)
+- MTTR / MTTD / MTBF: время восстановления, обнаружения, наработка на отказ
+- RTO / RPO: допустимое время восстановления и допустимая потеря данных
+- DR (Disaster Recovery) / Backup
+- HA (High Availability)
+- On-call / дежурство
+- L1 / L2 / L3 поддержка
+- Runbook: инструкция по эксплуатации
+- Monitoring / Alerting
+- Capacity / Performance tuning
+- Technical documentation / Confluence
+- Dev / Test / Preprod / Prod: контуры
+# 7. Работа с требованиями и аналитикой
+- BRD / FRD / SRS / ТЗ: документы требований
+- Source-to-target mapping (STTM): маппинг источника на целевую модель
+- Data dictionary: словарь данных
+- Роли в команде: Business Analyst (BA), System Analyst (SA), Data Analyst, Data Engineer, Data Architect, BI Developer, Analytics Engineer
+- UAT (User Acceptance Testing): приёмочное тестирование
+- Regression testing / Data reconciliation / Сверка данных
+- Unit / Integration / E2E tests
+- Self-service vs. managed analytics
+- KPI tree / Metric tree: дерево метрик
+- Single metric definition: единое определение метрики
+# 8. Стратегия и коммуникации
+- Data Strategy / Data-driven culture
+- Data maturity model: модель зрелости работы с данными
+- Data literacy: грамотность в работе с данными
+- Center of Excellence (CoE): центр компетенций
+- Federated model / Centralized model / Hub-and-spoke: модели организации аналитики
+- Quick win: быстрый видимый результат
+- Pain point: болевая точка пользователя
+- Buy-in: поддержка и согласие стейкхолдеров
+- Alignment / выравнивание ожиданий
+- Executive summary / Status report / Steering committee (SteerCo)
+- Vendor management / Tender / RFP / PoC / Pilot: работа с поставщиками и пилотами
 
